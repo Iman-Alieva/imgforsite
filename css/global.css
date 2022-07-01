@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Open sans';
+  src:
+    url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open sans';
+  src:
+    url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open sans';
+  src:
+    url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open sans';
+  src:
+    url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a  {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Open sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+input {
+  border-radius: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+:root {
+  --black: #000000;
+  --dusty-black: #333333;
+  --graphite-black: #4d4d4d;
+  --white: #ffffff;
+  --milk: #ececec;
+  --dusty-grey: #999;
+  --light-grey: #cacaca;
+  --signal-gray: #969696;
+  --platinum: #ececec;
+  --dark-grey: #666666;
+  --lavander: #9d5cd0;
+  --lavander-light: #D1A9F0;
+  --lavander-dark: #7943A4;
+  --lavander-medium-light: #C283F3;
+  --violet: #9643A4;
+  --puce: #d88f99;
+  --puce-02: rgba(216, 143, 153, 0.2);
+  --puce-04: rgba(216, 143, 153, 0.4);
+  --milk-03: rgba(236, 236, 236, 0.3);
+  --white-02: rgba(255, 255, 255, 0.2);
+  --dark-grey-05: rgba(102, 102, 102, 0.5);
+  --dark-05: rgba(0, 0, 0, 0.5);
+  --dark-06: rgba(0, 0, 0, 0.6);
+  --dark-09: rgba(0, 0, 0, 0.9);
+  --lavander-medium-light-04: rgba(194, 131, 243, 0.4);
+  --transition-duration:0.25s;
+  --transition-t-f: ease-in-out;
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+  --burger-width: 36px;
+  --burger-height: 28px;
+  --burger-line-height: 3.5px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1700px;
+  min-width: 320px;
+}
+
+.reset-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  max-width: 350px;
+}
+
+.main-btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 100px;
+  transition-property: background-color, color, border;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-tf);
+}
+
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.close-btn::before,
+.close-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: var(--burger-line-height);
+  height: 100%;
+  background-color: var( --white);
+}
+.close-btn::before {
+  transform: rotate(1.62turn);
+}
+.close-btn::after {
+  transform: rotate(-1.62turn);
+}
+
+.main-btn:focus {
+  outline: 2px solid var(--lavander-medium-light);
+  outline-offset: 5px;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--dusty-black);
+}
+
+.main-descr {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dusty-black);
+  max-width: 1080px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
