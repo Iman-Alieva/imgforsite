@@ -212,8 +212,8 @@ body {
 }
 
 .header-logo__ikon {
-  max-width: 225px;
-  max-height: 72px;
+  width: 100%;
+  height: 100%;
 }
 
 .header-container__right {
@@ -909,8 +909,8 @@ body {
 }
 
 .footer__logo img {
-  max-width: 225px;
-  max-height: 72px;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__list {
